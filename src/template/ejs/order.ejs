@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('block/head') %>
+
+<body>
+    <div class="page">
+        <%- include('block/header') %>
+        <section class="section section_order">
+            <div class="container">
+                <div class="order">
+                    <h1 class="order__title section__title">Заказать <mark>recardio</mark></h1>
+                    <form class="order__form">
+                        <label class="order__label">
+                            <input type="text" class="order__field" placeholder="Ф.И.О">
+                        </label>
+                        <label class="order__label">
+                            <input type="text" class="order__field" placeholder="Ваш телефон">
+                        </label>
+                        <label class="order__label">
+                            <input type="text" class="order__field" placeholder="Ваш почта">
+                        </label>
+                        <div class="order__price">Цена: <mark>999</mark></div>
+                        <button class="order__btn">Заказать  сейчас</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <%- include('block/footer') %>
+    </div>
+    <%- include('block/script') %>
+</body>
+
+</html>

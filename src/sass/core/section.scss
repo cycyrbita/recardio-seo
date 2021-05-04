@@ -7,9 +7,16 @@
 
     &_face {
         background-image: url("../media/section/face.jpg");
-        background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: center bottom;
+        background-color: #f06c5f;
+    }
+
+    &_order {
+        flex-grow: 1;
+        background-image: url("../media/section/order.jpg");
+        background-size: cover;
+        background-position: center bottom;
         background-color: #f06c5f;
     }
 }
@@ -23,7 +30,7 @@
     font-weight: 800;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .section {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -40,8 +47,19 @@
         padding-bottom: 30px;
 
         &_face {
-            padding-top: 75px;
             background-image: url("../media/section/face-768.jpg");
+
+            &_head {
+                padding-top: 75px;
+            }
+        }
+
+        &_order {
+            padding-top: 75px;
+            padding-bottom: 370px;
+            background-image: url("../media/section/order-768.jpg");
+            background-size: auto;
+            background-position: center bottom;
         }
     }
 

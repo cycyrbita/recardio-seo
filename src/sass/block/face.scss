@@ -104,6 +104,13 @@
 @media (max-width: 768px) {
     .face__title {
         font-size: 42px;
+
+        &_bot {
+            & mark {
+                display: inline;
+                font-size: inherit;
+            }
+        }
     }
 
     .face__list {
