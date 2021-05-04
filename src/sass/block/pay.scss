@@ -1,0 +1,37 @@
+
+.pay {
+    width: 50%;
+}
+
+.pay__title {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 48px;
+}
+
+.pay__subtitle {
+    text-align: left;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .pay {
+        width: auto;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pay {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .pay__title {
+        text-align: center;
+    }
+
+    .pay__subtitle {
+        text-align: center;
+    }
+}

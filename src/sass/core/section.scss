@@ -27,6 +27,29 @@
         background-size: cover;
         background-position: center;
     }
+
+    &_table {
+        padding-bottom: 125px;
+    }
+
+    &_pay {
+        position: relative;
+        padding: 165px 0;
+        padding-bottom: 165px;
+        background-color: #F0F0F0;
+
+        &::before {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            content: '';
+            width: 573px;
+            height: 565px;
+            background-image: url("../media/section/pay-human.png");
+            background-repeat: no-repeat;
+            background-position: left bottom;
+        }
+    }
 }
 
 .section__title {
@@ -42,6 +65,18 @@
     .section {
         padding-top: 40px;
         padding-bottom: 40px;
+
+        &_pay {
+            padding-top: 100px;
+            padding-bottom: 100px;
+
+            &::before {
+                height: 100%;
+                width: 50%;
+                background-image: url("../media/section/pay-human.jpg");
+                background-size: contain;
+            }
+        }
     }
 
     .section__title {
@@ -64,6 +99,18 @@
             background-size: auto;
             background-position: center bottom;
         }
+
+        &_pay {
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+            &::before {
+                left: auto;
+                transform: translateX(0);
+                right: 0;
+                width: 40%;
+            }
+        }
     }
 
     .section__title {
@@ -78,6 +125,16 @@
             background-image: url("../media/section/face-480.jpg");
             background-size: auto;
             background-position: center bottom;
+        }
+
+        &_pay {
+            padding-bottom: 200px;
+
+            &::before {
+                height: 190px;
+                width: 100%;
+                background-position: center bottom;
+            }
         }
     }
 
