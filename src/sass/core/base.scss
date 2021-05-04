@@ -233,3 +233,9 @@ html [type="button"],
 .overflow {
   overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 45px;
+  }
+}

@@ -19,6 +19,14 @@
         background-position: center bottom;
         background-color: #f06c5f;
     }
+
+    &_delivery {
+        flex-grow: 1;
+        background-color: #F1DED0;
+        background-image: url("../media/section/delivery.jpg");
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 .section__title {
@@ -48,14 +56,9 @@
 
         &_face {
             background-image: url("../media/section/face-768.jpg");
-
-            &_head {
-                padding-top: 75px;
-            }
         }
 
         &_order {
-            padding-top: 75px;
             padding-bottom: 370px;
             background-image: url("../media/section/order-768.jpg");
             background-size: auto;
