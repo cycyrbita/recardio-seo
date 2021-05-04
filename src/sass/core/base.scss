@@ -34,8 +34,8 @@ html {
 
 body {
   min-width: 320px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   color: #000;
@@ -228,4 +228,8 @@ html [type="button"],
 [type="submit"] {
   cursor: pointer;
   appearance: button;
+}
+
+.overflow {
+  overflow: hidden;
 }

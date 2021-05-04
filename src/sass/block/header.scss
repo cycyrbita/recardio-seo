@@ -1,0 +1,145 @@
+
+.header {
+    padding: 15px 0;
+    background-color: #A4322D;
+}
+
+.header__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav {
+    .nav__link {
+        &:hover {
+            opacity: .9;
+        }
+
+        &.active {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                bottom: -19px;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 8px;
+                width: 100%;
+                content: '';
+                background-color: #FF9502;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__nav {
+        .nav__link {
+            font-size: 16px;
+            padding-right: 15px;
+            padding-left: 15px;
+    
+            &.active {
+                &::before {
+                    bottom: -15px;
+                    height: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        & .container {
+            max-width: 100%;
+        }
+
+        &.mobile {
+            & .nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #A4322D;
+            }
+
+            & .logo {
+                position: relative;
+                z-index: 6;
+            }
+
+            & .header__open-nav {
+                position: relative;
+                z-index: 6;
+            }
+
+            & .header__open-nav {
+                & span {
+                    &:nth-child(1) {
+                        transform: translateY(9px) rotate(45deg);
+                    }
+
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    &:nth-child(3) {
+                        transform: translateY(-9px) rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+
+    .header__nav {
+        display: none;
+
+        .nav__link {
+            font-size: 20px;
+            padding: 10px 50px;
+            border: 1px solid transparent;
+
+            &.active {
+                border-color: rgba(255, 255, 255, .16);
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .header__open-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+
+        & span {
+            background-color: #fff;
+            height: 2px;
+            width: 100%;
+            transition: 0.3s;
+        }
+    }
+}

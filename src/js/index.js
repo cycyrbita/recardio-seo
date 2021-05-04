@@ -1,41 +1,8 @@
 
 $(document).ready(function () {
-    $('.form__field').focus(function () {
-        $(this).addClass('form__field_active')
-    }).blur(function () {
-        if ($(this).val() == "") {
-            $(this).removeClass('form__field_active')
-        }
-    })
-
-    var header = $('.header'),
-	    scrollPrev = 0,
-        pt = $('.header').outerHeight();
-    $('body').css('padding-top', pt);
-
-    $(window).scroll(function() {
-        var scrolled = $(window).scrollTop();
-        pt = $('.header').outerHeight();
-    
-        if ( scrolled > 100 && scrolled > scrollPrev ) {
-            header.addClass('mobile');
-        } else {
-            header.removeClass('mobile');
-        }
-        scrollPrev = scrolled;
-        $('body').css('padding-top', pt);
-    });
-
-    $(document).mouseup(function (e) {
-		var div = $('.nav__burger'),
-		    div2 = $('.nav__list_header');
-		if (!div.is(e.target) && div.has(e.target).length === 0 && !div2.is(e.target) && div2.has(e.target).length === 0) {
-			$('.header__nav').removeClass('visible');
-		}
-	});
-
-    $('.nav__burger').click(function() {
-        $('.header__nav').toggleClass('visible');
+    $('.js-open-menu').click(function() {
+        $('.header').toggleClass('mobile');
+        $('body, html').toggleClass('overflow');
     })
 
     $('.js-commits__box').owlCarousel({

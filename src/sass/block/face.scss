@@ -1,0 +1,112 @@
+
+.face__title {
+    margin-bottom: 30px;
+    max-width: 631px;
+    font-size: 64px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+
+    & mark {
+        color: #000;
+    }
+}
+
+.face__list {
+    max-width: 320px;
+}
+
+.face__item {
+    display: flex;
+    align-items: center;
+    padding: 12px 12px 12px 68px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: 13px center;
+    background-color: #fff;
+    font-size: 20px;
+    color: #000;
+    min-height: 71px;
+
+    & mark {
+        color: #FF9502;
+    }
+
+    & + & {
+        margin-top: 15px;
+    }
+
+    &:nth-child(1) {
+        background-image: url("../media/face/icon-1.png");
+    }
+
+    &:nth-child(2) {
+        background-image: url("../media/face/icon-2.png");
+    }
+
+    &:nth-child(3) {
+        background-image: url("../media/face/icon-3.png");
+    }
+}
+
+.face__btn {
+    display: inline-block;
+    padding: 25px 70px;
+    margin-top: 30px;
+    text-decoration: none;
+    background-color: #FF9502;
+    background-image: linear-gradient(180deg, #FF9502 0%, #FF0C1C 100%);
+    border-radius: 60px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.6px;
+}
+
+@media (max-width: 1024px) {
+    .face__title {
+        max-width: 470px;
+        font-size: 50px;
+    }
+
+    .face__btn {
+        font-size: 18px;
+        padding-right: 67px;
+        padding-left: 67px;
+    }
+}
+
+@media (max-width: 768px) {
+    .face__title {
+        font-size: 42px;
+    }
+
+    .face__list {
+        max-width: 280px;
+    }
+
+    .face__btn {
+        font-size: 16px;
+        padding-right: 57px;
+        padding-left: 57px;
+    }
+}
+
+@media (max-width: 480px) {
+    .face__title {
+        font-size: 30px;
+    }
+
+    .face__list {
+        max-width: 100%;
+    }
+
+    .face__item {
+        padding: 10px 10px 10px 55px;
+        min-height: 30px;
+        background-size: 30px;
+    }
+}
