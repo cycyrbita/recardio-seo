@@ -11,6 +11,14 @@
     & mark {
         color: #000;
     }
+
+    &_bot {
+        & mark {
+            display: block;
+            font-size: 96px;
+            font-weight: 800;
+        }
+    }
 }
 
 .face__list {
@@ -48,6 +56,14 @@
     &:nth-child(3) {
         background-image: url("../media/face/icon-3.png");
     }
+
+    &_4 {
+        background-image: url("../media/face/icon-4.png") !important;
+    }
+
+    &_5 {
+        background-image: url("../media/face/icon-5.png") !important;
+    }
 }
 
 .face__btn {
@@ -70,6 +86,12 @@
     .face__title {
         max-width: 470px;
         font-size: 50px;
+
+        &_bot {
+            & mark {
+                font-size: 72px;
+            }
+        }
     }
 
     .face__btn {
