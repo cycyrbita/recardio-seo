@@ -50,6 +50,15 @@
             background-position: left bottom;
         }
     }
+
+    &_contacts {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        background-image: url("../media/section/contacts.jpg");
+        background-size: cover;
+        background-position: center bottom;
+        background-color: #f06c5f;
+    }
 }
 
 .section__title {
@@ -111,6 +120,10 @@
                 width: 40%;
             }
         }
+
+        &_contacts {
+            background-image: url("../media/section/contacts-768.jpg");
+        }
     }
 
     .section__title {
@@ -135,6 +148,11 @@
                 width: 100%;
                 background-position: center bottom;
             }
+        }
+
+        &_contacts {
+            background-image: url("../media/section/contacts-480.jpg");
+            background-size: auto;
         }
     }
 
