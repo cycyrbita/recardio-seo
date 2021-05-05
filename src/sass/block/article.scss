@@ -1,0 +1,46 @@
+
+.article {
+    padding: 60px;
+    background-color: #fff;
+
+    & p {
+        font-size: 18px;
+
+        & + p {
+            margin-top: 25px;
+        }
+    }
+}
+
+.article__title {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 36px;
+}
+
+@media (max-width: 480px) {
+    .article {
+        padding: 40px 30px;
+
+        & p {
+            & + p {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .article {
+        padding: 30px 15px;
+
+        & p {
+            font-size: 16px;
+        }
+    }
+
+    .article__title {
+        margin-bottom: 15px;
+        font-size: 26px;
+    }
+}
