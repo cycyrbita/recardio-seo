@@ -5,21 +5,19 @@ $(document).ready(function () {
         $('body, html').toggleClass('overflow');
     })
 
-    $('.js-commits__box').owlCarousel({
+    $('.message__body').owlCarousel({
         loop: true,
         autoHeight: true,
-        margin: 40,
-        responsive : {
-            320 : {
-                items: 1
+        items: 1,
+        nav: true,
+        responsive: {
+            0 : {
+                stagePadding: 0,
+                margin: 15
             },
-
-            768 : {
-                items: 2
-            },
-
-            1280 : {
-                items: 3
+            600 : {
+                stagePadding: 50,
+                margin: 55
             }
         }
     });

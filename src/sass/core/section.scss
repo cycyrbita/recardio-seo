@@ -58,6 +58,13 @@
         background-position: center bottom;
         background-color: #F1DED0;
     }
+
+    &_message {
+        display: flex;
+        flex-grow: 1;
+        background-image: url("../media/section/message.jpg");
+        background-size: cover;
+    }
 }
 
 .section__title {
