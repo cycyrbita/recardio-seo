@@ -64,6 +64,13 @@
     color: #fff;
     letter-spacing: 0.6px;
     border: 0;
+    opacity: 0.9;
+    transition: 0.3s color;
+
+    &:hover {
+        opacity: 1;
+        transform: scale(0.98);
+    }
 }
 
 @media (max-width: 1024px) {
