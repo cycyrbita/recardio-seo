@@ -65,20 +65,32 @@
             max-width: 100%;
         }
 
+        .nav {
+            padding-top: 60px;
+            padding-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #A4322D;
+            transform: translateX(100%);
+            transition: .3s transform;
+        }
+
         &.mobile {
             & .nav {
+                padding-top: 60px;
+                padding-bottom: 15px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
                 position: fixed;
                 top: 0;
                 right: 0;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
                 background-color: #A4322D;
+                transform: translateX(0);
             }
 
             & .logo {
@@ -111,14 +123,61 @@
 
     .header__nav {
         display: none;
+        padding-right: 15px;
+        padding-left: 30px;
+
+        & .nav__item {
+            width: 100%;
+
+            &:nth-child(1) {
+                & .nav__link {
+                    background-image: url("../media/nav/icon-1.svg");
+                }
+            }
+
+            &:nth-child(2) {
+                & .nav__link {
+                    background-image: url("../media/nav/icon-2.svg");
+                }
+            }
+
+            &:nth-child(3) {
+                & .nav__link {
+                    background-image: url("../media/nav/icon-3.svg");
+                }
+            }
+
+            &:nth-child(4) {
+                & .nav__link {
+                    background-image: url("../media/nav/icon-4.svg");
+                }
+            }
+
+            &:nth-child(5) {
+                & .nav__link {
+                    background-image: url("../media/nav/icon-5.svg");
+                }
+            }
+
+            &:nth-child(6) {
+                & .nav__link {
+                    background-image: url("../media/nav/icon-6.svg");
+                }
+            }
+        }
 
         .nav__link {
-            font-size: 20px;
-            padding: 10px 50px;
-            border: 1px solid transparent;
+            display: block;
+            font-size: 18px;
+            padding: 15px 0;
+            padding-right: 52px;
+            background-position: right center;
+            background-repeat: no-repeat;
+            text-align: right;
 
             &.active {
                 border-color: rgba(255, 255, 255, .16);
+                color: #FF9502;
 
                 &::before {
                     display: none;
