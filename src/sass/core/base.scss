@@ -230,12 +230,12 @@ html [type="button"],
   appearance: button;
 }
 
-.overflow {
-  overflow: hidden;
-}
-
 @media (max-width: 768px) {
   body {
     padding-top: 45px;
+  }
+
+  .overflow {
+    overflow: hidden;
   }
 }
