@@ -92,6 +92,10 @@
     border: 3px dashed #FF9502;
     border-radius: 50%;
     overflow: hidden;
+
+    & img {
+        border-radius: 50%;
+    }
 }
 
 .message__info {

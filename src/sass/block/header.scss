@@ -4,6 +4,12 @@
     background-color: #A4322D;
 }
 
+.header__site {
+    color: #fff;
+    margin-left: 15px;
+    margin-right: auto;
+}
+
 .header__body {
     display: flex;
     align-items: center;
@@ -35,6 +41,8 @@
 
 @media (max-width: 1024px) {
     .header__nav {
+        margin-right: -15px;
+
         .nav__link {
             font-size: 16px;
             padding-right: 15px;
@@ -47,6 +55,11 @@
                 }
             }
         }
+    }
+
+    .header__site {
+        font-size: 14px;
+        margin-left: 10px;
     }
 }
 
@@ -125,6 +138,7 @@
         display: none;
         padding-right: 15px;
         padding-left: 30px;
+        margin-right: 0;
 
         & .nav__item {
             width: 100%;
